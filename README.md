@@ -5,9 +5,9 @@
 The contextualiz function take the context name as a template literal and return a function which take two objects :
 
     - The initial value of the context
-    - Some context actions to change the context value
+    - Some actions to change the context value
 
-Once contextualiz is fully called it return a consumer and provider prefixed with the context name.
+Once contextualiz is fully called it return a consumer and provider prefixed with the context name, as follow :
 
 ```javascript
 const { consumeCounter, CounterProvider } = contextualiz`counter`(
